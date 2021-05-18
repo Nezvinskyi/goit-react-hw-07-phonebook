@@ -1,14 +1,19 @@
 {
   "contacts": [
     {
-      "name": "dima",
-      "number": "1111",
-      "id": 1
-    },
-    {
       "name": "John Dow",
       "number": "23423",
       "id": 2
+    },
+    {
+      "name": "Max Musterman",
+      "number": "23456789",
+      "id": 3
+    },
+    {
+      "name": "test me",
+      "number": "234234",
+      "id": 4
     }
   ]
 }

@@ -8,7 +8,7 @@ import './styles.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store.store}>
+    <Provider store={store}>
       <App />
     </Provider>
   </React.StrictMode>,

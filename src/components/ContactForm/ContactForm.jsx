@@ -1,7 +1,7 @@
 /* eslint-disable no-useless-escape */
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import * as ContactsOperations from '../../redux/contacts/contacts-operations';
+import { addContact } from '../../redux/contacts/contacts-operations';
 import store from '../../redux/store';
 import {
   FormControl,
@@ -13,8 +13,8 @@ import './ContactForm.scss';
 
 class ContactForm extends Component {
   state = {
-    name: 'dima',
-    number: '1111',
+    name: '',
+    number: '',
   };
 
   handleChange = event => {
@@ -24,7 +24,7 @@ class ContactForm extends Component {
 
   handleSubmit = event => {
     const { name, number } = this.state;
-    const contacts = store.store.getState().contacts.items;
+    const contacts = store.getState().contacts.items;
 
     event.preventDefault();
 
@@ -98,8 +98,7 @@ class ContactForm extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onSubmit: (name, number) =>
-      dispatch(ContactsOperations.addContact(name, number)),
+    onSubmit: (name, number) => dispatch(addContact(name, number)),
   };
 };
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getIsLoading } from './redux/contacts/contacts-selectors';
 import Layout from './components/Layout';
 import Section from './components/Section';
 import ContactForm from './components/ContactForm';
 import ContactList from './components/ContactList';
 import Filter from './components/Filter';
 import MyLoader from './components/Loader/Loader';
+import { getIsLoading } from './redux/contacts/contacts-selectors';
 
 const App = ({ isLoading }) => (
   <Layout>

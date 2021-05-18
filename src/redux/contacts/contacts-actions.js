@@ -1,4 +1,3 @@
-/* eslint-disable import/no-anonymous-default-export */
 import { createAction } from '@reduxjs/toolkit';
 
 export const addContactRequest = createAction('contacts/addContactRequest');

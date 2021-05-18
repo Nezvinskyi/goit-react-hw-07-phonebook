@@ -7,7 +7,7 @@ const styles = {
 
 const AppBar = () => (
   <header style={styles.header}>
-    <h1>HW-07-phonebook</h1>
+    <h1>HW-06(7)-phonebook</h1>
   </header>
 );
 

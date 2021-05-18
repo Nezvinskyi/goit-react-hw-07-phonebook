@@ -1,13 +1,13 @@
 const styles = {
-	header: {
-		margin: "0 auto",
+  header: {
+    margin: '0 auto',
     minHeight: 80,
   },
 };
 
 const AppBar = () => (
   <header style={styles.header}>
-    <h1>HW-06-phonebook</h1>
+    <h1>HW-07-phonebook</h1>
   </header>
 );
 
